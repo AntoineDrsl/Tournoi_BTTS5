@@ -1,0 +1,149 @@
+<nav class="hide-on-med-and-down sticky1">
+    <div class="nav-wrapper">
+        <ul id="navbar">
+            <li><a (click)="signups()">Signups</a></li>
+            <li><a (click)="screeningPhase()">Screening Phase</a></li>
+            <li><a (click)="qualifiers()">Qualifiers</a></li>
+            <li><a (click)="groupStage()">Group Stage</a></li>
+            <li><a (click)="round32()">Round of 32</a></li>
+            <li><a (click)="round16()">Round of 16</a></li>
+            <li><a (click)="quarters()">Quarterfinals</a></li>
+            <li><a (click)="semi()">Semifinals</a></li>
+            <li><a (click)="winnerFinals()">Finals</a></li>
+            <li><a (click)="grandFinals()">Grand Finals</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="content bg">
+    
+  <div class="row valign-wrapper" id="signups">
+    <div class="left date schedule col l5 m5 s5 card-panel z-depth-2">
+        <h4>December 7th - January 5th ►</h4>
+    </div>
+    <div class="right round schedule col l7 m7 s7 card-panel z-depth-2" (click)="signups()">
+        <h3>- Signups -</h3>
+    </div>
+    <div class="details schedule" *ngIf="displaySignups">
+        <img src="https://via.placeholder.com/750" alt="placeholder">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptate beatae, voluptas reprehenderit deleniti architecto officiis eaque nulla quia quod, laudantium ipsa suscipit consequuntur doloribus? Ea dicta voluptates non eveniet doloribus voluptatibus adipisci assumenda, reprehenderit incidunt facere vero obcaecati quidem, libero inventore voluptatum suscipit rem? Voluptas molestiae corrupti amet quod.</p>
+    </div>
+  </div>
+
+  <div class="row valign-wrapper">
+    <div class="left round schedule col l7 m7 s7 card-panel z-depth-2" (click)="screeningPhase()">
+        <h3>- Screening phase -</h3>
+    </div>
+    <div class="right date schedule col l5 m5 s5 card-panel z-depth-2">
+        <h4>◄ January 5th - January 12th</h4>
+    </div>
+    <div class="details schedule" *ngIf="displayScreeningPhase">
+        <img src="https://via.placeholder.com/750" alt="placeholder">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptate beatae, voluptas reprehenderit deleniti architecto officiis eaque nulla quia quod, laudantium ipsa suscipit consequuntur doloribus? Ea dicta voluptates non eveniet doloribus voluptatibus adipisci assumenda, reprehenderit incidunt facere vero obcaecati quidem, libero inventore voluptatum suscipit rem? Voluptas molestiae corrupti amet quod.</p>
+    </div>
+  </div>
+
+  <div class="row valign-wrapper" id="qualifiers">
+    <div class="left date schedule col l5 m5 s5 card-panel z-depth-2">
+        <h4>January 18th - January 19th ►</h4>
+    </div>
+    <div class="right round schedule col l7 m7 s7 card-panel z-depth-2" (click)="qualifiers()">
+        <h3>- Qualifiers -</h3>
+    </div>
+    <div class="details schedule" *ngIf="displayQualifiers">
+        <img src="https://via.placeholder.com/750" alt="placeholder">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptate beatae, voluptas reprehenderit deleniti architecto officiis eaque nulla quia quod, laudantium ipsa suscipit consequuntur doloribus? Ea dicta voluptates non eveniet doloribus voluptatibus adipisci assumenda, reprehenderit incidunt facere vero obcaecati quidem, libero inventore voluptatum suscipit rem? Voluptas molestiae corrupti amet quod.</p>
+    </div>
+  </div>
+
+  <div class="row valign-wrapper">
+    <div class="left round schedule col l7 m7 s7 card-panel z-depth-2" (click)="groupStage()">
+        <h3>- Group Stage -</h3>
+    </div>
+    <div class="right date schedule col l5 m5 s5 card-panel z-depth-2">
+        <h4>◄ January 25th - January 26th</h4>
+    </div>
+    <div class="details schedule" *ngIf="displayGroupStage">
+        <img src="https://via.placeholder.com/750" alt="placeholder">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptate beatae, voluptas reprehenderit deleniti architecto officiis eaque nulla quia quod, laudantium ipsa suscipit consequuntur doloribus? Ea dicta voluptates non eveniet doloribus voluptatibus adipisci assumenda, reprehenderit incidunt facere vero obcaecati quidem, libero inventore voluptatum suscipit rem? Voluptas molestiae corrupti amet quod.</p>
+    </div>
+  </div>
+
+  <div class="row valign-wrapper">
+    <div class="left date schedule col l5 m5 s5 card-panel z-depth-2">
+        <h4>February 1st - February 2nd ►</h4>
+    </div>
+    <div class="right round schedule col l7 m7 s7 card-panel z-depth-2" (click)="round32()">
+        <h3>- Round of 32 -</h3>
+    </div>
+    <div class="details schedule" *ngIf="displayRound32">
+        <img src="https://via.placeholder.com/750" alt="placeholder">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptate beatae, voluptas reprehenderit deleniti architecto officiis eaque nulla quia quod, laudantium ipsa suscipit consequuntur doloribus? Ea dicta voluptates non eveniet doloribus voluptatibus adipisci assumenda, reprehenderit incidunt facere vero obcaecati quidem, libero inventore voluptatum suscipit rem? Voluptas molestiae corrupti amet quod.</p>
+    </div>
+  </div>
+
+  <div class="row valign-wrapper">
+    <div class="left round schedule col l7 m7 s7 card-panel z-depth-2" (click)="round16()">
+        <h3>- Round of 16 + Loser's Bracket Round 1 & 2 -</h3>
+    </div>
+    <div class="right date schedule col l5 m5 s5 card-panel z-depth-2">
+        <h4>◄ February 8th - February 9th</h4>
+    </div>
+    <div class="details schedule" *ngIf="displayRound16">
+        <img src="https://via.placeholder.com/750" alt="placeholder">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptate beatae, voluptas reprehenderit deleniti architecto officiis eaque nulla quia quod, laudantium ipsa suscipit consequuntur doloribus? Ea dicta voluptates non eveniet doloribus voluptatibus adipisci assumenda, reprehenderit incidunt facere vero obcaecati quidem, libero inventore voluptatum suscipit rem? Voluptas molestiae corrupti amet quod.</p>
+    </div>
+  </div>
+
+  <div class="row valign-wrapper">
+    <div class="left date schedule col l5 m5 s5 card-panel z-depth-2">
+        <h4>February 15th - February 16th ►</h4>
+    </div>
+    <div class="right round schedule col l7 m7 s7 card-panel z-depth-2" (click)="quarters()">
+        <h3>- Quarterfinals + Loser's Bracket Round 3 & 4 -</h3>
+    </div>
+    <div class="details schedule" *ngIf="displayQuarters">
+        <img src="https://via.placeholder.com/750" alt="placeholder">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptate beatae, voluptas reprehenderit deleniti architecto officiis eaque nulla quia quod, laudantium ipsa suscipit consequuntur doloribus? Ea dicta voluptates non eveniet doloribus voluptatibus adipisci assumenda, reprehenderit incidunt facere vero obcaecati quidem, libero inventore voluptatum suscipit rem? Voluptas molestiae corrupti amet quod.</p>
+    </div>
+  </div>
+
+  <div class="row valign-wrapper">
+    <div class="left round schedule col l7 m7 s7 card-panel z-depth-2" (click)="semi()">
+        <h3>- Semifinals + Loser's Bracket Round 5 & 6 -</h3>
+    </div>
+    <div class="right date schedule col l5 m5 s5 card-panel z-depth-2">
+        <h4>◄ February 22nd - February 23rd</h4>
+    </div>
+    <div class="details schedule" *ngIf="displaySemi">
+        <img src="https://via.placeholder.com/750" alt="placeholder">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptate beatae, voluptas reprehenderit deleniti architecto officiis eaque nulla quia quod, laudantium ipsa suscipit consequuntur doloribus? Ea dicta voluptates non eveniet doloribus voluptatibus adipisci assumenda, reprehenderit incidunt facere vero obcaecati quidem, libero inventore voluptatum suscipit rem? Voluptas molestiae corrupti amet quod.</p>
+    </div>
+  </div>
+
+  <div class="row valign-wrapper">
+    <div class="left date schedule col l5 m5 s5 card-panel z-depth-2">
+        <h4>February 29th - March 1st ►</h4>
+    </div>
+    <div class="right round schedule col l7 m7 s7 card-panel z-depth-2" (click)="winnerFinals()">
+        <h3>- Winner's Finals + Loser's Finals & Loser's Grand Finals -</h3>
+    </div>
+    <div class="details schedule" *ngIf="displayWinnerFinals">
+        <img src="https://via.placeholder.com/750" alt="placeholder">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptate beatae, voluptas reprehenderit deleniti architecto officiis eaque nulla quia quod, laudantium ipsa suscipit consequuntur doloribus? Ea dicta voluptates non eveniet doloribus voluptatibus adipisci assumenda, reprehenderit incidunt facere vero obcaecati quidem, libero inventore voluptatum suscipit rem? Voluptas molestiae corrupti amet quod.</p>
+    </div>
+  </div>
+
+  <div class="row valign-wrapper">
+    <div class="left round schedule col l7 m7 s7 card-panel z-depth-2" (click)="grandFinals()">
+        <h3>- Grand Finals -</h3>
+    </div>
+    <div class="right date schedule col l5 m5 s5 card-panel z-depth-2">
+        <h4>◄ March 7th - March 8th</h4>
+    </div>
+    <div class="details schedule" *ngIf="displayGrandFinals">
+        <img src="https://via.placeholder.com/750" alt="placeholder">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptate beatae, voluptas reprehenderit deleniti architecto officiis eaque nulla quia quod, laudantium ipsa suscipit consequuntur doloribus? Ea dicta voluptates non eveniet doloribus voluptatibus adipisci assumenda, reprehenderit incidunt facere vero obcaecati quidem, libero inventore voluptatum suscipit rem? Voluptas molestiae corrupti amet quod.</p>
+    </div>
+  </div>
+</div>

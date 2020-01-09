@@ -1,0 +1,48 @@
+div.container.valign-wrapper {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffe8dc;
+  margin: 0;
+  max-width: 1980px;
+  vertical-align: middle;
+}
+
+div.container a {
+  font-size: large;
+  margin-left: 5px;
+  text-decoration: underline;
+}
+
+div.container img {
+  margin-top: 2px;
+  max-height: 40px;
+  max-width: 40px;
+}
+
+.footerlink {
+  display: flex;
+  align-items: center;
+  font-family: 'Bangers', cursive;
+}
+
+#twitch {
+  color: #6441a4;
+}
+
+#challonge {
+  color: #ff7324;
+}
+
+#discord {
+  color: #7289DA;
+}
+
+#forum {
+  color: #E865A0;
+}
+
+#sheet {
+  color: #30AC4E;
+}

@@ -1,0 +1,53 @@
+.bg{
+    padding: 50px; 
+    background-image: url(../../assets/images/background.png);
+    background-repeat: repeat;
+}
+
+#staff_container{
+    background-color: #422454c0;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+#staff_container h2{
+    color: white;
+}
+
+.staff_division{
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+}
+
+.staff_people{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    background-color: lightgrey;
+    padding: 0 30px;
+    border-radius: 10px;
+    width: 25%;
+}
+
+.staff_people img{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.social_media{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social_media div{
+    width: 10%;
+}
