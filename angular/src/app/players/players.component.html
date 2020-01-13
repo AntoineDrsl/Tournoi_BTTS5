@@ -2,8 +2,8 @@
     <table>
         <thead>
             <tr>
+                <th>Id</th>
                 <th><i class="fas fa-globe-americas"></i>Country</th>
-                <th><i class="fas fa-user"></i>Avatar</th>
                 <th><i class="far fa-address-card"></i>Player</th>
                 <th>Seeding</th>
                 <th>Taiko rank</th>
@@ -11,29 +11,13 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td class="table_country">France</td>
-                <td class="table_img"><img src="https://via.placeholder.com/150" alt="avatar"></td>
-                <td class="table_player">John Doe</td>
-                <td>84984984</td>
-                <td>84984984</td>
-                <td>54655464</td>
-            </tr>
-            <tr>
-                <td class="table_country">France</td>
-                <td class="table_img"><img src="https://via.placeholder.com/150" alt="avatar"></td>
-                <td class="table_player">John Doe</td>
-                <td>84984984</td>
-                <td>84984984</td>
-                <td>54655464</td>
-            </tr>
-            <tr>
-                <td class="table_country">France</td>
-                <td class="table_img"><img src="https://via.placeholder.com/150" alt="avatar"></td>
-                <td class="table_player">John Doe</td>
-                <td>84984984</td>
-                <td>84984984</td>
-                <td>54655464</td>
+            <tr *ngFor="let player of players; let i = index">
+                <td class="table_index">{{i+1}}</td>
+                <td class="table_country"><img src="{{player.country}}" alt="country"></td>
+                <td class="table_name">{{player.name}}</td>
+                <td class="table_seeding">{{player.seeding}}</td>
+                <td class="table_taikoRank">{{player.taikoRank}}</td>
+                <td class="table_ppCount">{{player.ppCount}}</td>
             </tr>
         </tbody>
     </table>
